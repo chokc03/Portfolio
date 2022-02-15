@@ -1,0 +1,78 @@
+.aboutContainer{
+    background: grey;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:90%;
+        height:90%;
+        color:#fff;
+        background: rgba(151, 151, 151, 0.63);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.3px);
+        -webkit-backdrop-filter: blur(6.3px);
+        .category{
+            width:30%;
+            height:80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: solid 5px #fff;
+        }
+        .intro{
+            width:70%;
+            height:80%;
+            padding:0 20px 0px 40px;
+            line-height: 29px;
+            overflow-y: scroll;
+            h3{
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+            .introduction{
+                padding:20px 20px 20px 0 ;
+            }
+            .skills{
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap:20px;
+                    li{
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img{
+                            width:80px;
+                            height:80px;
+                            border-radius: 20px;
+                        }
+                    }
+
+                }
+            }
+            .resume{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    color:#fff;
+                    border:solid 3px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    width:80px;
+                }
+            }
+        }
+
+    }
+}

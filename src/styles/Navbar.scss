@@ -2,9 +2,11 @@
     transform: translateX(-75px);
 }
 .navbarContainer{
+    position: fixed;
     display: flex;
     align-items: center;
     transition: 0.5s ease-in-out;
+    z-index: 999;
     .Navbar{
         display: flex;
         justify-content: center;
@@ -22,11 +24,16 @@
                 margin-bottom: 30px;
                 font-size: 1.25rem;
                 font-weight: bold;
+                transition: 0.2s ease-in-out;
+                &:hover{
+                    transform: scale(1.2);
+                    
+                }
                 a{
                     color:#FFF6F0;
                     text-decoration: none;
                     outline: none;
-                    transition: 0.5s ease-in-out;
+                    transition: 0.2s ease-in-out;
                     &:hover{
                         color:#EC6937;
                     }
@@ -37,6 +44,9 @@
     .toggleBtn{
         position: relative;
         .circleBtn{
+            display: flex;
+            justify-content:flex-end;
+            align-items: center;
             position: absolute;
             cursor: pointer;
             left:-15px;
@@ -44,9 +54,6 @@
             width:30px;
             height:30px;
             border-radius: 50px;
-            display: flex;
-            justify-content: end;
-            align-items: center;
             background-color: #FFC7B2;
             .arrow {
                 transition: 0.5s ease-in;

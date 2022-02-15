@@ -17,7 +17,7 @@ function Navbar() {
             <div className='Navbar'>
                 <ul>
                     <li onClick={removeActive}><Link to="/">Home</Link></li>
-                    <li onClick={removeActive}><Link to="/projects">Projects</Link></li>
+                    <li onClick={removeActive}><Link to="/works">Works</Link></li>
                     <li onClick={removeActive}><Link to="/about">About</Link></li>
                     <li onClick={removeActive}><a href="https://github.com/chokc03" target="_blank" rel="noreferrer">Github</a></li>
                 </ul>
