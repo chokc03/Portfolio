@@ -2,4 +2,38 @@
     overflow:hidden;
     height:100vh;
     width:100%;
+    position: relative;
+    img{
+        z-index:-999;
+        position: absolute;
+    }
+    .refresh{
+        position: absolute;
+        top:20px;
+        left:20px;
+        cursor: pointer;
+        .refreshIcon{
+            background-color: transparent;
+            font-size: 2rem;
+            &:hover{
+                color:#2196f3;
+            }
+        }
+    }
+    .pinch{
+        position: absolute;
+        top:20px;
+        left:70px;
+        cursor: pointer;
+        .pinIcon{
+            background-color: transparent;
+            font-size: 2rem;
+            &:hover{
+                color:#c4141b;
+            }
+        }
+        .fix{
+            color:#c4141b;
+        }
+    }
 }
