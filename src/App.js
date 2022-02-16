@@ -15,11 +15,10 @@ function App() {
       setZoom({scale:1});
     }
     else{
-      const scale = e.clientY*0.00001;
+      const scale = e.clientY*0.0001;
       const newScale = scale+zoom.scale;
       setZoom({scale:newScale});
     }
-
   }
   const refresh=()=>{
     setZoom({scale:1});
@@ -34,6 +33,7 @@ function App() {
     <div className='App' onMouseMove={handleScale} >
         <div className="refresh" onClick={refresh}><MdRefresh className='refreshIcon'/></div>
         <div className="pinch" onClick={pinch}><MdOutlinePushPin className={pin?'pinIcon fix':'pinIcon'}/></div>
+        <div className='text'>Move the Mouse UP&DOWN</div>
         <img style={{transform:`scale(${zoom.scale})`}}  src="/image/image.svg" alt=""/>
         <Navbar pinchTrue={pinchTrue}/>
         <Routes>
