@@ -3,7 +3,8 @@
     height:100vh;
     width:100%;
     position: relative;
-    img{
+    font-family: 'Roboto Serif', sans-serif;
+    .background{
         z-index:-999;
         position: absolute;
     }
@@ -15,8 +16,10 @@
         .refreshIcon{
             background-color: transparent;
             font-size: 2rem;
+            transition: 0.5s ease-in;
             &:hover{
                 color:#2196f3;
+                transform: rotate(360deg);
             }
         }
     }
@@ -30,6 +33,18 @@
             font-size: 2rem;
             &:hover{
                 color:#c4141b;
+                animation: pin 0.5s ;
+                @keyframes pin {
+                    0%{
+                        transform: translateY(0);
+                    }
+                    30%{
+                        transform: translateY(-5px);
+                    }
+                    70%{
+                        transform: translateY(10px);
+                    }
+                }
             }
         }
         .fix{

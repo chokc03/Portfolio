@@ -1,8 +1,6 @@
-import React from 'react';
-import "../styles/Home.scss";
-// import Navbar from "./Navbar";
+import React from 'react'
 
-function Home() {
+function Home(){
   return (
     <div>
 
@@ -10,4 +8,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;

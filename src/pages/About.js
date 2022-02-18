@@ -17,13 +17,15 @@ function About() {
                 </p>
                 <div className='skills'>
                     <ul>
-                        <li className='React'><img src="" alt=""/>React</li>
-                        <li className='HTML'><img src="" alt=""/>HTML</li>
-                        <li className='CSS'><img src="" alt=""/>CSS</li>
-                        <li className='Javascript'><img src="" alt=""/>Javascript</li>
-                        <li className='SCSS'><img src="" alt=""/>SCSS</li>
-                        <li className='StyledComponent'><img src="" alt=""/>Styled-Component</li>
-                        <li className='Redux'><img src="" alt=""/>Redux</li>
+                        <li className='React'><img src="/image/react.svg" alt=""/>React</li>
+                        <li className='Redux'><img src="/image/redux.svg" alt=""/>Redux</li>
+                        <li className='Javascript'><img src="/image/js.svg" alt=""/>Javascript</li>
+                        <li className='StyledComponent'><img src="/image/styled-component.png" alt=""/>Styled-Component</li>
+                        <li className='HTML'><img src="/image/html-5.svg" alt=""/>HTML</li>
+                        <li className='CSS'><img src="/image/css3.svg" alt=""/>CSS</li>
+                        <li className='SCSS'><img src="/image/sass.png" alt=""/>SCSS</li>
+                        <li className='Redux'><img src="/image/git.svg" alt=""/>Git</li>
+                        <li className='Redux'><img src="/image/github.svg" alt=""/>Github</li>
                     </ul>
                 </div>
                 <div className='resume'>

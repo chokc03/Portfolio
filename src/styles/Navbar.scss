@@ -23,10 +23,12 @@
                 list-style-type: none;
                 margin-bottom: 30px;
                 font-size: 1.25rem;
-                font-weight: bold;
+                font-weight: 400;
                 transition: 0.2s ease-in-out;
+                font-family: 'Poppins', sans-serif !important;
                 &:hover{
                     transform: scale(1.2);
+                    font-weight: 500;
                     
                 }
                 a{
