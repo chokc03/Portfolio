@@ -1,5 +1,5 @@
 .Close{
-    transform: translateX(-75px);
+    transform: translateX(-45px);
 }
 .navbarContainer{
     position: fixed;
@@ -12,7 +12,7 @@
         justify-content: center;
         background-color: #FFC7B2;
         height:100vh;
-        width:80px;
+        width:55px;
         border-radius: 0px 50px 50px 0px;
         ul{
             display: flex;
@@ -22,22 +22,19 @@
             li{
                 list-style-type: none;
                 margin-bottom: 30px;
-                font-size: 1.25rem;
-                font-weight: 400;
                 transition: 0.2s ease-in-out;
-                font-family: 'Poppins', sans-serif !important;
                 &:hover{
                     transform: scale(1.2);
                     font-weight: 500;
-                    
                 }
                 a{
                     color:#FFF6F0;
                     text-decoration: none;
                     outline: none;
                     transition: 0.2s ease-in-out;
-                    &:hover{
-                        color:#EC6937;
+                    img{
+                        width:30px;
+                        height:30px;
                     }
                 }
             }

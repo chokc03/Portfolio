@@ -16,9 +16,9 @@ function App() {
     }
     else{
       let scale=0;
-      if(e.clientY<=100){
-        scale = e.clientY*-0.001;
-        if(zoom.scale<1){
+      if(e.clientY<=window.innerHeight*1/2){
+        scale = (e.clientY-window.innerHeight)*0.0001;
+        if(zoom.scale<=1){
           scale=0;
         }
       }
@@ -40,11 +40,11 @@ function App() {
     setPin(true);
   }
   return (
-    <div className='App' onMouseMove={handleScale} >
+    <div className='App' onMouseMove={handleScale}>
         <div className="refresh" onClick={refresh}><MdRefresh className='refreshIcon'/></div>
         <div className="pinch" onClick={pinch}><MdOutlinePushPin className={pin?'pinIcon fix':'pinIcon'}/></div>
         <div className='text'>Move the Mouse UP&DOWN</div>
-        <img className="background" style={{transform:`scale(${zoom.scale})`}}  src="/image/image.svg" alt=""/>
+        <img  className="background" style={{transform:`scale(${zoom.scale})`}}  src="/image/image.svg" alt=""/>
         <Navbar pinchTrue={pinchTrue}/>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
