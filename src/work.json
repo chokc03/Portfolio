@@ -1,0 +1,20 @@
+{
+    "works":[
+        {
+            "id":1,
+            "title":"Recipe Website",
+            "image":"/image/1.jpeg",
+            "skill":"Fetching Api",
+            "github":"",
+            "website":"https://github.com/chokc03/Recipe-website"
+        },
+        {
+            "id":2,
+            "title":"Recipe Website",
+            "image":"/image/1.jpeg", 
+            "skill":"Fetching Api",
+            "github":"",
+            "website":""
+        }
+    ]
+}

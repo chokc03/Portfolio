@@ -55,8 +55,21 @@
         position: absolute;
         top:20px;
         left:120px;
-
         color:#000;
         padding:5px;
+        cursor: pointer;
+        height:auto;
+        &:hover{
+            .up{
+                position: relative;
+                color: #c4141b;
+                top:-10px;
+            }
+            .down{
+                position: relative;
+                color: #0058ca;
+                top:30px;
+            }
+        }
     }
 }
