@@ -1,12 +1,14 @@
+@import './styles/variables.scss';
+
 .App{
+    position: relative;
     overflow:hidden;
     height:100vh;
     width:100%;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: $base_font;
     .background{
-        z-index:-999;
         position: absolute;
+        z-index:-999;
     }
     .refresh{
         position: absolute;
@@ -15,10 +17,10 @@
         cursor: pointer;
         .refreshIcon{
             background-color: transparent;
-            font-size: 2rem;
-            transition: 0.5s ease-in;
+            font-size: $font_size_biggest;
+            transition: $base_transition;
             &:hover{
-                color:#2196f3;
+                color:$color_blue;
                 transform: rotate(360deg);
             }
         }
@@ -30,9 +32,9 @@
         cursor: pointer;
         .pinIcon{
             background-color: transparent;
-            font-size: 2rem;
+            font-size: $font_size_biggest;
             &:hover{
-                color:#c4141b;
+                color:$color_red;
                 animation: pin 0.5s ;
                 @keyframes pin {
                     0%{
@@ -48,27 +50,30 @@
             }
         }
         .fix{
-            color:#c4141b;
+            color:$color_red;
         }
     }
     .text{
         position: absolute;
         top:20px;
         left:120px;
-        color:#000;
+        color:$color_black;
         padding:5px;
         cursor: pointer;
         height:auto;
+        .up,.down{
+            transition: $base_transition;
+        }
         &:hover{
             .up{
                 position: relative;
-                color: #c4141b;
-                top:-10px;
+                color: $color_blue;
+                font-weight: $font_bold;
             }
             .down{
                 position: relative;
-                color: #0058ca;
-                top:30px;
+                color: $color_red;
+                font-weight: $font_bold;
             }
         }
     }

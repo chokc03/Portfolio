@@ -1,60 +1,33 @@
+@import 'variables';
+
 .aboutContainer{
-    position: relative;
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include cardContainer();
     .box{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width:90%;
-        height:90%;
-        color:#fff;
-        background: rgba(151, 151, 151, 0.63);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6.3px);
-        -webkit-backdrop-filter: blur(6.3px);
+        @include boxContainer();
         .category{
-            width:30%;
-            height:80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-right: solid 5px #fff;
-            font-size: 2rem;
-            font-family: 'Permanent Marker', cursive;
+            @include categoryTitle();
         }
         .name{
-            font-weight: bold;
-            font-size: 1rem;
+            font:$font_bold $font_size_normal;
         }
         .age{
-            font-style:italic;
-            font-size: 0.8rem;
+            font:italic $font_size_small;
         }
         .intro{
-            width:70%;
-            height:80%;
-            padding:0 20px 0px 40px;
+            @include introContainer();
             line-height: 29px;
-            overflow-y: scroll;
             &::-webkit-scrollbar{
                 display:none;
             }
             h3{
-                font-size: 2rem;
+                font:$font_size_biggest $title_font;
                 margin-bottom: 20px;
-                font-family: 'Redressed', cursive;
             }
             .introduction{
                 padding:20px 20px 20px 0;
                 font-size: 1.2rem;
                 &::first-letter{
-                    font-weight: bold;
-                    font-size: 1.5rem;
-                }
+                    font:$font_bold $font_size_bigger;                }
             }
             .skills{
                 ul{
@@ -62,11 +35,11 @@
                     flex-wrap: wrap;
                     gap:40px;
                     li{
-                        list-style: none;
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        font-size: 1rem;
+                        list-style: none;
+                        font-size: $font_size_normal;
                         img{
                             width:80px;
                             height:80px;
@@ -75,25 +48,21 @@
                 }
             }
             .resume{
+                @include center();
                 margin:20px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 a{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-decoration: none;
-                    color:#fff;
-                    border: solid 3px #fff;
-                    border-radius: 20px;
-                    width:100px;
-                    transition: 0.5s ease-in;
                     position: relative;
+                    @include center();
+                    text-decoration: none;
+                    color:$color_white;
+                    border: $border_style $color_white;
+                    border-radius: $border_radius;
+                    width:100px;
+                    transition: $base_transition;
                     overflow: hidden;
-                    font-weight: bold;
+                    font-weight: $font_bold;
                     &:hover{
-                        color:#7a2d59;
+                        color:$color_main;
                         &::before{
                             top:0;
                         }
@@ -101,14 +70,13 @@
                     &::before{
                         content: "";
                         position: absolute;
-                        background-color: #fff;
+                        background-color: $color_white;
                         left:0;
                         top:-180%;
                         width:100%;
                         height:100%;
                         z-index: -1;
-                        // border-radius: 20px;
-                        transition: 0.5s;
+                        transition: $base_transition;
                     }
             
                 }

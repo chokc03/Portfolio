@@ -2,9 +2,7 @@ import React from 'react';
 import '../styles/Works.scss';
 import works from '../work.json';
 
-function Works() {
-
-
+function Works(){
   return (
     <div className='workContainer'>
       <div className='box'>

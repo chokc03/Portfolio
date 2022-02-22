@@ -1,53 +1,30 @@
+@import 'variables';
+
 .workContainer{
-    height:100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include cardContainer();
     .box{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width:90%;
-        height:90%;
-        color:#fff;
-        background: rgba(151, 151, 151, 0.63);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(6.3px);
-        -webkit-backdrop-filter: blur(6.3px);
+        @include boxContainer();
         .category{
-            width:30%;
-            height:80%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-right: solid 5px #fff;
-            font-size: 2rem;
-            font-family: 'Permanent Marker', cursive;
+            @include categoryTitle();
         }
         .intro{
-            width:70%;
-            height:80%;
-            overflow-y: scroll;
+            @include introContainer();
             display: flex;
             flex-wrap: wrap;
-            padding: 0 20px 0 20px;
             &::-webkit-scrollbar{
                 display: none;
             }
             .workWrap{
+                position: relative;
                 width:200px;
                 height:150px;
-                position: relative;
                 overflow: hidden;
                 .image{
+                    position: relative;
+                    @include center();
                     overflow: hidden;
                     cursor: pointer;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    position: relative;
-                    transition: 0.5s ease-in;
+                    transition: $base_transition;
                     height: 100%;
                     width: 100%;
                     &::before{
@@ -58,26 +35,24 @@
                         width:100%;
                         height:100%;
                         top:0;
-                        transition: 0.2s ease-in;
+                        transition: $base_transition_short;
                     }
                     &::after{
                         content:"view";
                         position: absolute;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        @include center();
                         top:50%;
                         left:50%;
                         transform: translate(-50%,-50%);
                         padding:2px;
                         width:50px;
                         height:50px;
-                        border-radius: 50%;
-                        background: #7a2d59;
-                        color:#fff;
-                        font-size:0.7rem;
+                        border-radius: $border_circle;
+                        background: $color_main;
+                        color:$color_white;
+                        font-size:$font_size_small;
                         opacity:0;
-                        transition:0.5s 0.2s ease-out;
+                        transition:$base_transition 0.2s;
                     }
                     &:hover{
                         transform: scale(1.05);
@@ -88,8 +63,7 @@
                             opacity: 1;
                         }
                     }
-                    a 
-                    {
+                    a{
                         height:100%;
                         width:100%;
                         img{

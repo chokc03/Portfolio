@@ -1,3 +1,5 @@
+@import 'variables';
+
 .Close{
     transform: translateX(-45px);
 }
@@ -5,33 +7,28 @@
     position: fixed;
     display: flex;
     align-items: center;
-    transition: 0.5s ease-in-out;
+    transition: $base_transition;
     z-index: 999;
     .Navbar{
         display: flex;
         justify-content: center;
-        background-color: #FFC7B2;
+        background-color: $color_navbar;
         height:100vh;
         width:55px;
         border-radius: 0px 50px 50px 0px;
         ul{
-            display: flex;
+            @include center();
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             li{
                 list-style-type: none;
                 margin-bottom: 30px;
-                transition: 0.2s ease-in-out;
+                transition: $base_transition_short;
                 &:hover{
                     transform: scale(1.2);
                     font-weight: 500;
                 }
                 a{
-                    color:#FFF6F0;
-                    text-decoration: none;
-                    outline: none;
-                    transition: 0.2s ease-in-out;
+                    transition: $base_transition_short;
                     img{
                         width:30px;
                         height:30px;
@@ -43,19 +40,19 @@
     .toggleBtn{
         position: relative;
         .circleBtn{
+            position: absolute;
             display: flex;
             justify-content:flex-end;
             align-items: center;
-            position: absolute;
             cursor: pointer;
             left:-15px;
             top:-20px;
             width:30px;
             height:30px;
-            border-radius: 50px;
-            background-color: #FFC7B2;
+            border-radius: $border_circle;
+            background-color: $color_navbar;
             .arrow {
-                transition: 0.5s ease-in;
+                transition: $base_transition;
                 display: flex;
                 align-items: center;
             }

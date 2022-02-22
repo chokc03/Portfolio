@@ -1,0 +1,80 @@
+//font-family
+$base_font:'Poppins', sans-serif;
+$category_font:'Permanent Marker', cursive;
+$title_font:'Redressed', cursive;
+
+//color
+$color_blue:#2196f3;
+$color_red:#c4141b;
+$color_black:#000;
+$color_white:#fff;
+$color_main:#7a2d59;
+$color_navbar:#ffc7b2;
+
+//font-weight
+$font_bold:bold;
+
+//transition
+$base_transition:0.5s ease-in-out;
+$base_transition_short:0.2s ease-in-out;
+
+//font-size
+$font_size_biggest:2rem;
+$font_size_bigger:1.5rem;
+$font_size_big:1.2rem;
+$font_size_normal:1rem;
+$font_size_small:0.6rem;
+
+//border
+$border_circle:50%;
+$border_radius:16px;
+$border_style:solid 3px;
+
+//glassmorphism
+@mixin  glassmorphism(){
+    background: rgba(151, 151, 151, 0.63);
+    border-radius: $border_radius;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+}
+
+//center div
+@mixin center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//cardContainer
+@mixin cardContainer() {
+    @include center();
+    height:100vh;
+    position: relative;
+}
+
+//boxContainer
+@mixin boxContainer(){
+    @include center();
+    @include glassmorphism();
+    width:90%;
+    height:90%;
+    color:$color_white;
+}
+
+//categoryTitle
+@mixin categoryTitle() {
+    @include center();
+    width:30%;
+    height:80%;
+    border-right: $border_style $color_white;
+    font:$font_size_biggest $category_font;
+}
+
+//introContainer
+@mixin introContainer() {
+    width:70%;
+    height:80%;
+    overflow-y: scroll; 
+    padding: 0 20px 0 20px;
+}
