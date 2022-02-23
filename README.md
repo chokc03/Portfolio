@@ -2,7 +2,9 @@
 
 ### Demo 
 
-- website : 
+<img width="1439" alt="스크린샷 2022-02-23 오후 11 04 55" src="https://user-images.githubusercontent.com/86751419/155334882-47d6f940-608e-458d-b91e-35faad5a59a8.png">
+
+- website : https://kyungchancho.netlify.app/
 
 ### Purpose of the project 
 
