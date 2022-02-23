@@ -9,6 +9,9 @@
     .background{
         position: absolute;
         z-index:-999;
+        @media screen and (max-width:1150px) {
+            height:100%;
+        }
     }
     .refresh{
         position: absolute;
