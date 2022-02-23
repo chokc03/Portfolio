@@ -30,6 +30,7 @@ function About() {
                 </div>
                 <div className='resume'>
                     <a href="">Resume</a>
+                    <a href="https://velog.io/@chokc03" target="_blank" rel="noreferrer">Blog</a>
                 </div>
             </div>
 

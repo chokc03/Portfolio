@@ -3,18 +3,16 @@
         {
             "id":1,
             "title":"Recipe Website",
-            "image":"/image/1.jpeg",
-            "skill":"Fetching Api",
-            "github":"",
-            "website":"https://github.com/chokc03/Recipe-website"
+            "info": "Used an API source to make a recipe website for various categories of food.",
+            "image":"/image/recipe.png",
+            "website":"https://chokc03.github.io/Recipe-website/"
         },
         {
             "id":2,
-            "title":"Recipe Website",
-            "image":"/image/1.jpeg", 
-            "skill":"Fetching Api",
-            "github":"",
-            "website":""
+            "title":"DisneyClone",
+            "info": "A clone website for Disney Plus using Styled-component.",
+            "image":"/image/disneyclone.png", 
+            "website":"https://github.com/chokc03/Dinsney-plus-clone"
         }
     ]
 }

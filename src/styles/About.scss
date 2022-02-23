@@ -27,7 +27,8 @@
                 padding:20px 20px 20px 0;
                 font-size: 1.2rem;
                 &::first-letter{
-                    font:$font_bold $font_size_bigger;                }
+                    font:$font_bold $font_size_bigger;
+                }
             }
             .skills{
                 ul{
@@ -53,6 +54,7 @@
                 a{
                     position: relative;
                     @include center();
+                    margin-right: 40px;
                     text-decoration: none;
                     color:$color_white;
                     border: $border_style $color_white;

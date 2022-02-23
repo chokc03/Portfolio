@@ -5,9 +5,11 @@ import '../styles/Navbar.scss';
 
 function Navbar({pinchTrue}) {
     const[toggleNav,setToggleNav] = useState(false);
+    //toggle the navbar(in and out)
     const handleNavbar=()=>{
         setToggleNav(value=>!value)
     }
+    //disactive the navbar
     const removeActive=()=>{
         setToggleNav(false);
     }

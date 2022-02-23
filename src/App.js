@@ -10,18 +10,22 @@ import {MdRefresh, MdOutlinePushPin} from 'react-icons/md';
 function App() {
   const [zoom,setZoom] = useState({scale:1});
   const [pin,setPin] = useState(false);
+
+  //functions that ables to zoom in and out by using the mouse Y axis and changing the image scale
   const handleScale=(e)=>{
     if(pin){
       setZoom({scale:1});
     }
     else{
       let scale=0;
+      //zoom out when the mouse is half way up from the screen
       if(e.clientY<=window.innerHeight*1/2){
         scale = (e.clientY-window.innerHeight)*0.0001;
-        if(zoom.scale<=1){
+        if(zoom.scale<=1.1){
           scale=0;
         }
       }
+      //zoom in when moving the mouse down
       else{
         scale = e.clientY*0.0001;
       }
@@ -29,15 +33,18 @@ function App() {
       setZoom({scale:newScale});
     }
   }
+  //refresh the zoom scale
   const refresh=()=>{
     setZoom({scale:1});
   }
+  //fix the image
   const pinch=()=>{
     setPin(value=>!value);
   }
   const pinchTrue=()=>{
     setPin(true);
   }
+
   return (
     <div className='App' onMouseMove={handleScale}>
         <div className="refresh" onClick={refresh}><MdRefresh className='refreshIcon'/></div>
