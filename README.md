@@ -16,7 +16,6 @@
 - Javascript
 
 ### Advanced Feature
-----
 #### Mouse Events
 - Zoom the background image in and out when moving the mouse up and down by changing the image scale value
     > Used onMouseMove function to get the current Y location of the mouse
