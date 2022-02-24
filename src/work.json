@@ -12,7 +12,7 @@
             "title":"DisneyClone",
             "info": "A clone website for Disney Plus using Styled-component.",
             "image":"/image/disneyclone.png", 
-            "website":"https://github.com/chokc03/Dinsney-plus-clone"
+            "website":"https://dinseyclone.netlify.app/"
         }
     ]
 }
