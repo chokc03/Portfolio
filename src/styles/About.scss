@@ -24,13 +24,12 @@
                 margin-bottom: 20px;
             }
             .introduction{
-                padding:20px 20px 20px 0;
-                font-size: 1.2rem;
-                &::first-letter{
-                    font:$font_bold $font_size_bigger;
-                }
+                padding:10px 20px 0 0;
+                font-size: $font_size_big;
+                max-width:800px
             }
             .skills{
+                margin-top: 20px;
                 ul{
                     display: flex;
                     flex-wrap: wrap;

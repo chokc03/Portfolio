@@ -13,7 +13,13 @@ function About() {
                 <p className='name'>Kyungchan Cho</p>
                 <p className='age'>29.05.2000</p>
                 <p className='introduction'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I am a Front-End developer from Republic of Korea. I have a passion about making interactive UI effects, animations, and Simple websites.
+                </p>
+                <p className='introduction'>
+                Websites are helpful for people in various situations. Therefore, I have a goal in creating a website for public interest.
+                </p>
+                <p className='introduction'>
+                I am a Fast learner, can quickly learn, understand, and utilize new skills in order to work in code.
                 </p>
                 <div className='skills'>
                     <ul>
