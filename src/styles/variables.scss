@@ -58,7 +58,7 @@ $border_style:solid 3px;
 //boxContainer
 @mixin boxContainer(){
     @include center();
-    max-width:1300px;
+    width:1300px;
     height:100%;
     color:$color_white;
     @media screen and (max-width:700px) {
