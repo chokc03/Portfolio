@@ -32,10 +32,11 @@ function About() {
                         <li className='SCSS'><img src="/image/sass.png" alt=""/>SCSS</li>
                         <li className='Redux'><img src="/image/git.svg" alt=""/>Git</li>
                         <li className='Redux'><img src="/image/github.svg" alt=""/>Github</li>
+                        <li className='Redux'><img src="/image/mysql.svg" alt=""/>MYSQL</li>
                     </ul>
                 </div>
                 <div className='resume'>
-                    <a href="">Resume</a>
+                    <a href="/">Resume</a>
                     <a href="https://velog.io/@chokc03" target="_blank" rel="noreferrer">Blog</a>
                 </div>
             </div>
