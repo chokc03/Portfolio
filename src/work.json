@@ -13,13 +13,6 @@
             "info": "A clone website for Disney Plus using Styled-component.",
             "image":"/image/disneyclone.png", 
             "website":"https://dinseyclone.netlify.app/"
-        },
-        {
-            "id":3,
-            "title":"Deutsch-Bahn-Plan",
-            "info": "Useful for planning German transportaion, used with RestAPI.",
-            "image":"/image/DBPlan.png", 
-            "website":""
         }
     ]
 }

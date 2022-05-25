@@ -53,9 +53,9 @@ function App() {
         <img  className="background" style={{transform:`scale(${zoom.scale})`}}  src="/image/image.svg" alt=""/>
         <Navbar pinchTrue={pinchTrue}/>
         <Routes>
-          <Route exact path="/" element={<Home/>}/>
+          <Route path="/Home" element={<Home/>}/>
           <Route path="/works" element={<Works/>}/>
-          <Route path="/about" element={<About/>}/>
+          <Route exact path="/" element={<About/>}/>
         </Routes>
     </div>
   );
