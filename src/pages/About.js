@@ -37,7 +37,7 @@ function About() {
                 </div>
                 <div className='resume'>
                     <a href="/">Resume</a>
-                    <a href="/">Contact</a>
+                    <a href="/Contact">Contact</a>
                 </div>
             </div>
 
