@@ -16,6 +16,7 @@
 - React
 - SCSS
 - Javascript
+- Email-js
 
 ### Advanced Feature
 #### Mouse Events
