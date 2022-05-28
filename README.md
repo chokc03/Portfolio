@@ -74,8 +74,8 @@
 ### Things to improve
 
 - When a empty link is selected from the website, the pin function is being diabled.
-
 - Lack of Responsive Feature
+- Lack of managing re-useable components and styles such as buttons
 
 
     
