@@ -62,7 +62,6 @@ $border_style:solid 3px;
     height:100%;
     color:$color_white;
     @media screen and (max-width:700px) {
-        display:flex;
         flex-direction: column;
     }
 }
@@ -75,8 +74,9 @@ $border_style:solid 3px;
     border-right: $border_style $color_white;
     font:$font_size_biggest $category_font;
     @media screen and (max-width:700px) {
+        margin-bottom: 40px;
         border-right: none;
-        height:20%;
+        height:auto;
     }
 }
 
@@ -86,7 +86,12 @@ $border_style:solid 3px;
     height:80%;
     overflow-y: scroll; 
     padding: 0 20px 0 20px;
+    &::-webkit-scrollbar{
+        display:none;
+    }
     @media screen and (max-width:700px) {
-        height:80%;
+        height:auto;
     }
 }
+
+

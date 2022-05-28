@@ -1,11 +1,12 @@
 import {useState} from 'react';
-import './App.scss';
 import {Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './pages/Navbar';
 import Works from './pages/Works';
 import About from './pages/About';
 import {MdRefresh, MdOutlinePushPin} from 'react-icons/md';
+import Contact from './pages/Contact';
+import './styles/App.scss';
 
 function App() {
   const [zoom,setZoom] = useState({scale:1});
@@ -56,6 +57,7 @@ function App() {
           <Route exact path="/" element={<Home/>}/>
           <Route path="/works" element={<Works/>}/>
           <Route path="/About" element={<About/>}/>
+          <Route path="/Contact" element={<Contact/>}/>
         </Routes>
     </div>
   );

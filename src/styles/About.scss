@@ -16,9 +16,7 @@
         .intro{
             @include introContainer();
             line-height: 29px;
-            &::-webkit-scrollbar{
-                display:none;
-            }
+
             h3{
                 font:$font_size_biggest $title_font;
                 margin-bottom: 20px;

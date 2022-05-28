@@ -1,0 +1,83 @@
+@import 'variables.scss';
+
+.contactContainer{
+    @include cardContainer();
+    .box{
+        @include boxContainer();
+        .category{
+            @include categoryTitle();
+        }
+        .intro{
+            @include introContainer();
+            @include center;
+        }
+    }
+}
+.contactContainer{
+    .box{
+        .intro{
+            form{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width:100%;
+                input{
+                    outline: none;
+                    padding:10px;
+                    margin-bottom: 15px;
+                    width:50%;
+                    min-width:200px;
+                    color:$color_white;
+                    font-size: $font_size_normal;
+                    background-color: transparent;
+                    border: transparent;
+                    border-bottom: $border_style $color_white;
+                    &::placeholder{
+                        color:$color_white;
+                    }
+                    &:focus{
+                        border-color: $color_main;
+                    }
+                }
+                textarea{
+                    width: 50%;
+                    min-width: 180px;
+                    height:200px;
+                    outline: none;
+                    background-color: transparent;
+                    border: solid 2px $color_white;
+                    padding: 10px;
+                    color: $color_white;
+                    font-size: $font_size_normal;
+                    &::placeholder{
+                        color:$color_white;
+                    }
+                    &:focus{
+                        border-color: $color_main;
+                    }
+                }
+                button{
+                    margin-top: 20px;
+                    width: 30%;
+                    cursor: pointer;
+                    padding: 5px;
+                    font-size: $font_size_big;
+                    color:$color_white;
+                    background-color: transparent;
+                    border: $border_style $color_white;
+                    border-radius: $border_radius;
+                    &:hover{
+                        color:$color_main;
+                        border-color: $color_main;
+                    }
+                }
+                @media screen and (max-width:700px) {
+                    button{
+                        font-size: $font_size_small;
+                    }      
+                }
+            }
+        }
+    }
+}
+
