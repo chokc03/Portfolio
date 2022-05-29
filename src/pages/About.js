@@ -32,7 +32,7 @@ function About() {
                         <li className='SCSS'><img src="/image/sass.png" alt=""/>SCSS</li>
                         <li className='Redux'><img src="/image/git.svg" alt=""/>Git</li>
                         <li className='Redux'><img src="/image/github.svg" alt=""/>Github</li>
-                        <li className='Redux'><img src="/image/mysql.svg" alt=""/>MYSQL</li>
+                        <li className='MYSQL'><img src="/image/mysql.svg" alt=""/>MYSQL</li>
                     </ul>
                 </div>
                 <div className='resume'>

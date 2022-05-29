@@ -79,6 +79,12 @@
                     }
             
                 }
+                @media screen and (max-width:700px) {
+                    a{
+                        font-size: $font_size_small;
+                        font-weight: normal;
+                    }
+                }
             }
         }
 
