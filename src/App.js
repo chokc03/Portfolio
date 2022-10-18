@@ -46,11 +46,14 @@ function App() {
     setPin(true);
   }
 
+
   return (
     <div className='App' onMouseMove={handleScale}>
         <div className="refresh" onClick={refresh}><MdRefresh className='refreshIcon'/></div>
         <div className="pinch" onClick={pinch}><MdOutlinePushPin className={pin?'pinIcon fix':'pinIcon'}/></div>
         <div className='text'>Move the Mouse <span className='up'>UP</span>&<span className='down'>DOWN</span></div>
+        {/* toggle dimensions 2d to 3d, vise versa. change the className when it is clicked and use the attr content to change the value of the element */}
+        <div className='dimensionChangeBtn2D' dimension='3D'>2D</div>
         <img  className="background" style={{transform:`scale(${zoom.scale})`}}  src="/image/image.svg" alt=""/>
         <Navbar pinchTrue={pinchTrue}/>
         <Routes>
